@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Biblioteca.css">
+    <link rel="stylesheet" href="estilos.css">
+    
+     <!-- script js -->
+     <script src="JS/jquery.3.2.1.js"></script>
+     <script src="JS/Biblioteca.js"></script>
+<!-- script de fontawesome -->
+     <script src="https://kit.fontawesome.com/e2775f231b.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <!-- ENCABEZADO -->  
+    
+    
+<nav>
+        <input type="checkbox" name="" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i> <!-- poner bars -->
+        </label>
+        <a href="inicio/Inicio.html" class="Enlace">
+            <img src="buho blanco.png" alt="" class="logo">
+        </a>
+        <a href="inicio/Inicio.html" class="nombre">WebBro</a>
+
+        <ul >
+
+            <li>
+                <i class="fa-sharp fa-solid fa-house"></i>  
+                <a href="inicio/Inicio.html" >Inicio</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-book"></i>
+                <a href="Biblioteca.html"class="active">Libreria</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-users"></i>
+                <a href="Nosotros/Nosotros.html">Nosotros</a>
+            </li>
+            <li>
+                <i class="fa-sharp fa-solid fa-phone-volume"></i>
+                <a href="Contactanos/Contactanos.html">Contacto</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="#">Carrito</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-user"></i>
+                <a href="LOGIN!/index.html">Inicio Sesion</a>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- CUERPO -->
+    <div class="wrap">
+        <h1>ESCOGE TU LIBRO PREFERIDO</h1>
+        <div class="store-wrapper">
+            <div class="category_list">
+                <a href="#" class="category_Item" category="all">Todo</a>
+                <a href="#" class="category_Item" category="ciencia ficcion">Ciencia Ficcion</a>
+                <a href="#" class="category_Item" category="terror y sobrenatural">Terror y Sobrenatural</a>
+                <a href="#" class="category_Item" category="drama">Drama</a>
+                <a href="#" class="category_Item" category="romantica">Romantica</a>
+            </div>
+            <section class="products_list">
+                <div class="product-item" category="ciencia ficcion">
+                    <img src="LIBRERIA/Ciencia/Un mundo feliz.webp" alt="">
+                    <p>Un mundo feliz <br>
+                    Aldous Huxley </p>
+                    <div class="box">
+                        <div class="precio">S/. 20.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="ciencia ficcion">
+                    <img src="LIBRERIA/Ciencia/Hush,Hush.jpg" alt="">
+                    <p>Hush Hush <br>
+                        Becca Fitzpatrick</p>
+                    <div class="box">
+                        <div class="precio">S/. 32.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="ciencia ficcion">
+                    <img src="LIBRERIA/Ciencia/Los Juegos del Hambre.webp" alt="">
+                   
+                 <p>Los Juegos del Hambre <br>
+                    Suzanne Collins</p>
+                    <div class="box">
+                        <div class="precio">S/. 30.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="ciencia ficcion">
+                    <img src="LIBRERIA/Ciencia/Maze Runner.webp" alt="">
+                    
+                  <p>Maze Runner <br> James Dashner</p>
+                    <div class="box">
+                        <div class="precio">S/. 26.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+
+                <div class="product-item" category="ciencia ficcion">
+                    <img src="LIBRERIA/Ciencia/Sostener el cielo.webp" alt="">
+                    <p>Sostener el cielo <br> Liu Cixin</p>
+                    <div class="box">
+                        <div class="precio">S/. 23.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="ciencia ficcion">
+                    <img src="LIBRERIA/Ciencia/Un mundo devastado.webp" alt="">
+                    <p>Un mundo devastado <br> Aldiss Brian</p>
+                    <div class="box">
+                        <div class="precio">S/. 20.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="ciencia ficcion">
+                    <img src="LIBRERIA/Ciencia/Astronautas.webp" alt="">
+                    <p>Astronautas <br> Lem Stanislaw</p>
+                    <div class="box">
+                        <div class="precio">S/. 18.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="ciencia ficcion">
+                    <img src="LIBRERIA/Ciencia/Tiempo de Marte.webp" alt="">
+                    <p>Tiempo de Marte <br> Dick, Philip K.</p>
+                    <div class="box">
+                        <div class="precio">S/. 20.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+
+                <!-- TERROR -->
+
+                <div class="product-item" category="terror y sobrenatural">
+                    <img src="LIBRERIA/Terror/El resplandor.jpg" alt="">
+                    <p>El resplandor <br> Stephen King</p>
+                    <div class="box">
+                        <div class="precio">S/. 24.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="terror y sobrenatural">
+                    <img src="LIBRERIA/Terror/Amigo Imaginario.jpg" alt="">
+                    <p>Amigo Imaginario <br> Stephen Chbosky</p>
+                    <div class="box">
+                        <div class="precio">S/. 28.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="terror y sobrenatural">
+                    <img src="LIBRERIA/Terror/La Cabaña.jpeg" alt="">
+                    <p>La Cabaña <br> Natasha Preston</p>
+                    <div class="box">
+                        <div class="precio">S/. 25.50</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="terror y sobrenatural">
+                    <img src="LIBRERIA/Terror/Carmilla.webp" alt="">
+                    <p>Carmilla <br> Sheridan Le Fanu</p>
+                    <div class="box">
+                        <div class="precio">S/. 22.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="terror y sobrenatural">
+                    <img src="LIBRERIA/Terror/El hombre de tiza.webp" alt="">
+                    <p>El hombre de tiza <br> C.J. Tudor</p>
+                    <div class="box">
+                        <div class="precio">S/. 27.50</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+
+                <div class="product-item" category="terror y sobrenatural">
+                    <img src="LIBRERIA/Terror/El Fantasma de la Ópera.jpg" alt="">
+                    <p>El Fantasma de la Ópera <br> Gastón Leroux</p>
+                    <div class="box">
+                        <div class="precio">S/. 20.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="terror y sobrenatural">
+                    <img src="LIBRERIA/Terror/La Otra Vuelta de Tuerca.jpg" alt="">
+                    <p>La Otra Vuelta de Tuerca <br> James Henry</p>
+                    <div class="box">
+                        <div class="precio">S/. 31.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="terror y sobrenatural">
+                    <img src="LIBRERIA/Terror/Obsesión Escolar.jpg" alt="">
+                    <p>Obsesión Escolar <br> Fernando Yahir Gómez Salinas</p>
+                    <div class="box">
+                        <div class="precio">S/. 28.50</div>
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+
+                <!-- DRAMA -->
+
+                <div class="product-item" category="drama">
+                    <img src="LIBRERIA/Drama/la nina del arrozal.jpg" alt="">
+                    <p>La niña del arrozal <br> Jose Luis Olaizola</p>
+                    <div class="box">
+                        <div class="precio">S/. 18.50</div>
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-item" category="drama">
+                    <img src="LIBRERIA/Drama/Bajo la misma estrella.jpg" alt="">
+                    <p>Bajo la misma estrella <br> John Green</p>
+                    <div class="box">
+                        <div class="precio">S/. 23.50</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="drama">
+                    <img src="LIBRERIA/Drama/Memorias de una geisha.jpg" alt="">
+                    <p>Memorias de una geisha <br> Arthur Golden</p>
+                    <div class="box">
+                        <div class="precio">S/. 27.50</div>
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-item" category="drama">
+                    <img src="LIBRERIA/Drama/Esperando a Godot.jpeg" alt="">
+                    <p>Esperando a Godot <br> Samuel Beckett</p>
+                    <div class="box">
+                        <div class="precio">S/. 15.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="drama">
+                    <img src="LIBRERIA/Drama/Ana Karenina.webp" alt="">
+                    <p>Ana Karenina <br> León Tolstói </p>
+                    <div class="box">
+                        <div class="precio">S/. 20.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="drama">
+                    <img src="LIBRERIA/Drama/Romance de lobos.jpg" alt="">
+                    <p>Romance de lobos <br> Ramón María del Valle-Inclán</p>
+                    <div class="box">
+                        <div class="precio">S/. 23.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+
+                <div class="product-item" category="drama">
+                    <img src="LIBRERIA/Drama/Radio Silencio.jpg" alt="">
+                    <p>Radio Silencio <br> Oseman Alice</p>
+                    <div class="box">
+                        <div class="precio">S/. 24.50</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="drama">
+                    <img src="LIBRERIA/Drama/Silence.jpg" alt="">
+                    <p>Silence <br> Salvador Flor</p>
+                    <div class="box">
+                        <div class="precio">S/. 23.50</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+
+                <!-- ROMANTICA -->
+
+                <div class="product-item" category="romantica">
+                    <img src="LIBRERIA/Romantica/orgullo y prejuicio.jpeg" alt="">
+                    <p>Orgullo y Prejuicio <br> Jane Austen</p>
+                    <div class="box">
+                        <div class="precio">S/. 22.50</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="romantica">
+                    <img src="LIBRERIA/Romantica/Eleanor & Park.jpg" alt="">
+                    <p>Eleanor & Park <br> Rainbow Rowell</p>
+                    <div class="box">
+                        <div class="precio">S/. 30.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="romantica">
+                    <img src="LIBRERIA/Romantica/El ruiseñor.jpg" alt="">
+                    <p>El ruiseñor <br> Kristin Hannah</p>
+                    <div class="box">
+                        <div class="precio">S/. 25.00</div>
+                        <button class="comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="product-item" category="romantica">
+                    <img src="LIBRERIA/Romantica/Flores en la tormenta.jpg" alt="">
+                    <p>Flores en la tormenta <br> Laura Kinsale</p>
+                    <div class="box">
+                        <div class="precio">S/. 28.50</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="romantica">
+                    <img src="LIBRERIA/Romantica/Los dos amores de mi vida.webp" alt="">
+                    <p>Los dos amores de mi vida <br> Taylor Jenkins Reid</p>
+                    <div class="box">
+                        <div class="precio">S/. 27.50</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="romantica">
+                    <img src="LIBRERIA/Romantica/Una flor para otra flor.jpg" alt="">
+                    <p> Una flor para otra flor <br> Megan Maxwell</p>
+                    <div class="box">
+                        <div class="precio">S/. 17.50</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="romantica">
+                    <img src="LIBRERIA/Romantica/La luz que perdimos.webp" alt="">
+                    <p>La luz que perdimos <br> Jill Santopolo</p>
+                    <div class="box">
+                        <div class="precio">S/. 20.50</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                <div class="product-item" category="romantica">
+                    <img src="LIBRERIA/Romantica/La edad de la inocencia.jpg" alt="">
+                    <p>La edad de la inocencia <br> Edith Wharton</p>
+                    <div class="box">
+                        <div class="precio">S/. 21.50</div>
+                        <button class="comprar">Comprar</button>
+                    </div> 
+                </div>
+                
+            </section>
+
+        </div>
+   

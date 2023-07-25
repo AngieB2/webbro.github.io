@@ -1,0 +1,376 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none; 
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    background:linear-g radient(#ef233c, #fff);
+
+/*     font-family: 'Times New Roman', Times, serif;
+ */}
+
+.wrap {
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+    height: calc(100vh-80px);
+}
+
+.wrap h1 {
+    color: #ef233c;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px 0px;
+}
+
+.wrap h1:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #c7c7c7;
+    margin: 20px 0;
+}
+
+.store-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category_list {
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+}
+
+.category_list .category_Item {
+    display: block;
+    width: 90%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background: #e84c3d;
+
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.category_list .ct_item-active {
+    background: #ef233c;
+}
+
+/* PRODUCTOS */
+
+.products_list {
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products_list .product-item {
+    width: 22%;
+    margin-left: 3%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 22);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start; 
+
+    transition: all, .4s;
+}
+
+.products_list .product-item img {
+    width: 100%;
+   height: 275px;
+    
+}
+
+
+
+.products_list .product-item p{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background: #ef233c;
+
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.products_list .product-item .box {
+    display: flex;
+    width: 100%;
+    padding: 8px 10px 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    text-align: center;
+    
+}
+.products_list .product-item .box .precio {
+    color: #ef233c;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 4px 4px 4px;
+}
+
+.products_list .product-item .box .comprar {
+    font-size: 16px;
+    color: #ef233c;
+    padding: 4px 4px 4px 4px;
+    
+    font-weight: 400;
+    border: 1px solid black;
+    border-radius: 18px ;
+}
+
+.products_list .product-item .box .comprar:hover{
+    cursor: pointer;
+    background-color: #ef233c;
+    color: white;
+    border: 1px solid white;
+}
+
+
+/* ENCABEZADO */
+/* nav{
+    background: white;
+    height: 80px;
+    width: 100%;
+    
+    
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    list-style: none; 
+    text-decoration: none;
+} */
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1100px){
+	.products_list .product-item{
+		width: 30.3%;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.category_list,
+	.products_list{
+		width: 100%;
+	}
+
+	.category_list{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+    .category_list .category_Item{
+		align-self: flex-start;
+		width: 15%;
+		font-size: 14px;
+	}
+
+	.products_list .product-item .box{
+		margin-left: 4.5%;
+	}
+
+	.products_list .product-item .box:nth-child(3n+1){
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.category_list{
+		flex-direction: column;
+	}
+	.category_list .category_Item{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	.products_list .product-item{
+		width: 47.5%;
+	}
+
+	.products_list .product-item .box:nth-child(3n+1){
+		margin-left: 4.5%;
+	}
+
+	.products_list .product-item .box:nth-child(2n+1){
+		margin-left: 0px;
+	} 
+
+}
+
+@media screen and (max-width: 400px){
+	.products_list .product-item{
+		width: 100%;
+		margin-left: 0px;
+	}
+}
+
+
+
+/* encabezado */
+nav{
+    
+    background: #ef233c;
+    height: 80px;
+    width: 100%;
+    
+    
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+    color: white;
+    
+}
+.nombre{
+    color: white;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    
+    float: left;
+    margin-right: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    float: left;
+    margin-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+    
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 16px;
+    padding: 7px 13px;
+    border-radius: 7px;
+}
+i{
+    color: white;
+    font-size: 16px;
+}
+
+li a.active, li a:hover{
+    background: white;
+    color:#ef233c;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+span{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: red;
+    font-size: 30px;
+    font-weight: 500;
+}
+ 
+/* RESPONSIVE */
+@media (max-width:952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:850px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ef233c;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a.hover, li a.active{
+        background: none;
+        color: white;
+        align-items: center;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+} 
+    

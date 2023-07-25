@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none; 
+}
+
+body {
+    background-image: url(../Contactanos/BODY.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 1.5em;
+}
+
+.contenedor {
+    max-width: 1170px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    padding-top: 30px;
+
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+.titulo span {
+    color: black;
+}
+
+.contenedor-grupo {
+    box-shadow: 0 0 20px 0 black;
+}
+.contenedor-grupo > * {
+    padding: 1em;
+}
+
+.contenedor-form {
+    background: #FF5A4A;
+}
+ .contenedor-form form p {
+    margin: 0;
+    padding: 1em;
+ }
+
+ .contenedor-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+.contenedor-form form .block {
+    grid-column: 1 / 3;
+}
+
+ .contenedor-form form button,
+ .contenedor-form form input,
+ .contenedor-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid #999;
+}
+
+.contenedor-form form button {
+    background: white;
+    border: 0;
+    cursor: pointer;
+    color: #ef233c;
+    
+}
+
+.contenedor-form form button:hover{
+    background: #FF784A;
+    color: white;
+    transition: background-color 1s ease-in-out;
+    outline: 0;
+}
+.contenedor-form form button:focus {
+    background: #FF784A;
+    transition: background-color 1s ease-in-out;
+    outline: 0;
+ }
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+ .logo img{
+    height: 200px;
+    width: 200px;
+ }
+
+h1 {
+    font-size: 3.2em;
+    text-align: center;
+    margin: 0 0 1.3rem 0;
+    color: black;
+}
+
+ .contenedor-info {
+    background-color: white;
+ }
+
+ .contenedor-info ul,
+ .contenedor-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+    color: black;
+    font-size: 1.5em; 
+ }
+
+ .contenedor-info ul {
+    list-style: none;
+    padding: 0 0 1em 0;
+    
+ }
+
+ .contenedor-info ul li {
+    padding: .5em;
+ }
+
+
+ /* ************** */
+
+
+
+
+
+ 

@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+}
+body{
+  background: linear-gradient(#ef233c, #fff);
+  min-height: 100vh;
+}
+
+/* encabezado */
+nav{
+    
+  background: #ef233c;
+  height: 80px;
+  width: 100%;
+  
+  
+}
+.enlace{
+  position: absolute;
+  padding: 20px 50px;
+  color: white;
+  
+}
+.nombre{
+  color: white;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  
+  float: left;
+  margin-right: 20px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.logo{
+  height: 80px;
+  width: 80px;
+  float: left;
+  color: white;
+  margin-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+i{
+  color: white;
+  font-size: 16px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 16px;
+  padding: 7px 13px;
+  border-radius: 7px;
+}
+
+li a.active, li a:hover{
+  background: white;
+  color: #ef233c;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 20px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+span{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: red;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width:952px){
+  .enlace{
+      padding-left: 20px;
+  }
+  nav ul li a{
+      font-size: 14px;
+  }
+}
+
+@media (max-width:850px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ef233c;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  li a.hover, li a.active{
+    background: none;
+    color: white;
+    align-items: center;
+  }
+  #check:checked ~ ul{
+      left: 0;
+  }
+} 
+ 
+
+
+  main {
+    padding: 20px 0;
+  }
+  
+  .cuadro-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cuadro {
+    background-color: #ef233c;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+  }
+  .cuadrob{
+    background-color: white;
+  }
+  .cuadro-titulo {
+    margin-bottom: 20px;
+  }
+  
+  .cuadro-titulo h2 {
+    font-size: 100px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  
+  .cuadro-titulo h2 span {
+    color: #ef233c;
+    text-shadow: -2px -2px 0 #ef233c, 2px -2px 0 #ef233c, -2px 2px 0 #ef233c, 2px 2px 0 #ef233c;
+  }
+  
+  .cuadro-titulo h2 span::after {
+    content: "WEBBRO";
+    color: #fff;
+    text-shadow: #ef233c;
+  }
+  .cuadro-derecha {
+    text-align: left;
+  }
+  .contenido {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-left: 60px;
+    column-gap: 40px; /* Espacio entre las columnas */
+    column-count: 2; /* Dividir en 2 columnas */
+  }
+  .contenido img {
+    margin-left: 60px; 
+    width: 490px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .contenido p {
+    font-size: 20px; /* Ajusta el tamaño de la letra */
+    line-height: 1.5;
+  }
+  .cuadro-derecha .cuadro-titulo h2 {
+    color: white; /* Color de letra blanco */
+    font-size: 70px; /* Tamaño de letra más grande */
+  }
+  
+  .cuadro-derecha .contenido p {
+    color: white; /* Color de letra blanco */
+    font-size: 18px; /* Tamaño de letra más grande */
+  }
+
+  .imagenes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.imagenes-container img {
+    margin-right: 70px;
+}
+.imagenes-container .subtitulo {
+  position: absolute;
+  top: -100px; /* Ajusta la posición vertical del subtítulo */
+  left: 50%; /* Centra horizontalmente el subtítulo */
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+  footer {
+    background-color: #1b1c1e;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-social,
+.footer-info {
+    flex: 1;
+}
+
+.footer-social h4,
+.footer-info h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.footer-social ul,
+.footer-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-social ul li,
+.footer-info ul li {
+    margin-bottom: 8px;
+}
+
+.footer-social ul li a,
+.footer-info ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.footer-social ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-bottom {
+    background-color: #545557;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-bottom p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-bottom p a:hover {
+    text-decoration: underline;
+}
+/* Responsive */
+@media (max-width: 1100px) {
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    #myCarousel {
+      max-width: 100%;
+    }
+    
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+}
+
+
+/* Estilos para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+  header {
+    display: block; 
+  }
+
+  .cuadro-contenedor {
+    flex-direction: column; 
+  }
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+}
+
+/* Estilos para pantallas grandes (laptops) */
+@media (min-width: 1025px) {
+}
